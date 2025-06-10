@@ -1,1 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Inventario del Armario Ropa</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #f4f4f4;
+      padding: 20px;
+      text-align: center;
+    }
 
+    h1 {
+      color: #333;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .producto {
+      background: white;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .producto img {
+      max-width: 100%;
+      max-height: 200px;
+      object-fit: contain;
+    }
+
+    .producto p {
+      margin: 5px 0;
+    }
+
+    .producto a {
+      display: inline-block;
+      margin-top: 10px;
+      color: #007BFF;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Inventario Armario Ropa</h1>
+
+  <div class="grid">
+    
+   <div class="producto">
+  <h2>Chaleco Verano</h2>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVrLmi1XeOrvs8XTM_LARVgV7QfLHZg4_jOw&s" alt="Chaleco Verano">
+  <p><strong>Stock Armario ropa:</strong></p>
+  <ul>
+    <li>3 XL– 1 unidad</li>
+    <li>2 XL – 5 unidad</li>
+    <li>XL – 4 unidades</li>
+    <li>L – 4 unidades</li>
+    <li>M – 4 unidades</li>
+    <li>S – 4 unidades</li>
+  </ul>
+  <a href="https://www.generaladhesivos.com/proveedor-pegamento/649hoja-tecnica-TDS%20TANGIT%20Especial%20PVC-U.pdf" target="_blank">🔗 Ver Composición</a>
+</div>
+
+
+
+
+     
+  </div>
+
+</body>
+</html>
