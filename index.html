@@ -6,22 +6,28 @@
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      background-color: #f4f4f4;
+      background-color: rgb(244, 244, 244);
       padding: 30px;
       text-align: center;
     }
 
     h1 {
-      color: #333;
+      color: rgb(51, 51, 51);
       margin-bottom: 40px;
     }
 
+    .contenedor-tarjetas {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
     .tarjeta {
-      background: white;
+      background: rgb(255, 255, 255);
       border-radius: 20px;
       padding: 20px;
-      max-width: 350px;
-      margin: auto;
+      width: 300px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
       transition: transform 0.2s ease;
     }
@@ -34,7 +40,7 @@
       background-color: rgb(255, 78, 0);
       border-radius: 12px;
       padding: 12px;
-      color: white;
+      color: rgb(255, 255, 255);
       margin-bottom: 15px;
     }
 
@@ -44,7 +50,7 @@
     }
 
     .imagen-producto {
-      background: white;
+      background: rgb(255, 255, 255);
       padding: 10px;
       border-radius: 10px;
       margin-bottom: 15px;
@@ -67,8 +73,20 @@
       margin-bottom: 8px;
     }
 
-    .stock div {
-      line-height: 1.6;
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    th, td {
+      border: 1px solid rgb(220, 220, 220);
+      padding: 8px;
+      text-align: center;
+    }
+
+    th {
+      background-color: rgb(240, 240, 240);
     }
 
     .enlace {
@@ -88,54 +106,72 @@
 
   <h1>Inventario Armario Ropa</h1>
 
+  <div class="contenedor-tarjetas">
 
-   <div class="tarjeta">
-    <div class="cabecera">
-      <h2>Polos Manga Corta</h2>
+    <div class="tarjeta">
+      <div class="cabecera">
+        <h2>Polos Manga Corta</h2>
+      </div>
+
+      <div class="imagen-producto">
+        <img src="Polo%20Mc.png" alt="Polo Manga Corta">
+      </div>
+
+      <div class="stock">
+        <h3>Stock actual</h3>
+        <table>
+          <thead>
+            <tr><th>Talla</th><th>Unidades</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>5 XL</td><td>4</td></tr>
+            <tr><td>4 XL</td><td>1</td></tr>
+            <tr><td>3 XL</td><td>1</td></tr>
+            <tr><td>2 XL</td><td>2</td></tr>
+            <tr><td>XL</td><td>4</td></tr>
+            <tr><td>L</td><td>8</td></tr>
+            <tr><td>M</td><td>8</td></tr>
+            <tr><td>S</td><td>0</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <a class="enlace" href="https://www.generaladhesivos.com/proveedor-pegamento/649hoja-tecnica-TDS%20TANGIT%20Especial%20PVC-U.pdf" target="_blank">🔗 Ver Composición</a>
     </div>
 
-    <div class="imagen-producto">
-    <img src="Polo%20Mc.png" alt="Chaleco Verano">
+    <div class="tarjeta">
+      <div class="cabecera">
+        <h2>Polos Manga Larga</h2>
+      </div>
+
+      <div class="imagen-producto">
+        <img src="Polo%20ML.png" alt="Polo Manga Larga">
+      </div>
+
+      <div class="stock">
+        <h3>Stock actual</h3>
+        <table>
+          <thead>
+            <tr><th>Talla</th><th>Unidades</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>5 XL</td><td>0</td></tr>
+            <tr><td>4 XL</td><td>1</td></tr>
+            <tr><td>3 XL</td><td>2</td></tr>
+            <tr><td>2 XL</td><td>2</td></tr>
+            <tr><td>XL</td><td>2</td></tr>
+            <tr><td>L</td><td>4</td></tr>
+            <tr><td>M</td><td>1</td></tr>
+            <tr><td>S</td><td>3</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <a class="enlace" href="https://www.generaladhesivos.com/proveedor-pegamento/649hoja-tecnica-TDS%20TANGIT%20Especial%20PVC-U.pdf" target="_blank">🔗 Ver Composición</a>
     </div>
 
-    <div class="stock">
-      <h3>Stock actual</h3>
-      <div>5 XL – 4 unidades</div>
-      <div>4 XL – 1 unidad</div>
-      <div>3 XL – 1 unidades </div>
-      <div>2 XL – 2 unidades</div>
-      <div>XL – 4 unidades</div>
-      <div>L – 8 unidades</div>
-      <div>M – 8 unidades</div>
-      <div>S – 0 unidades</div>
-    </div>
-
- <a class="enlace" href="https://www.generaladhesivos.com/proveedor-pegamento/649hoja-tecnica-TDS%20TANGIT%20Especial%20PVC-U.pdf" target="_blank">🔗 Ver Composición</a>
-  </div>
-     
-      <div class="tarjeta">
-    <div class="cabecera">
-      <h2>Polos Manga Larga</h2>
-    </div>
-
-    <div class="imagen-producto">
-     <img src="Polo%20ML.png" alt="Polo manga larga">
-    </div>
-
-    <div class="stock">
-      <h3>Stock actual</h3>
-      <div>5 XL – 0 unidades</div>
-      <div>4 XL – 1 unidad</div>
-      <div>3 XL – 2 unidades </div>
-      <div>2 XL – 2 unidades</div>
-      <div>XL – 2 unidades</div>
-      <div>L – 4 unidades</div>
-      <div>M – 1 unidades</div>
-      <div>S – 3 unidades</div>
-    </div>
-
-   
-    <a class="enlace" href="https://www.generaladhesivos.com/proveedor-pegamento/649hoja-tecnica-TDS%20TANGIT%20Especial%20PVC-U.pdf" target="_blank">🔗 Ver Composición</a>
+    <!-- Aquí puedes añadir fácilmente la tercera tarjeta si quieres -->
+    
   </div>
 
 </body>
