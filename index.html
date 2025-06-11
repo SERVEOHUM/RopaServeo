@@ -12,24 +12,20 @@
       display: flex;
       justify-content: center;
     }
-
     h1 {
       color: rgb(51, 51, 51);
       margin-bottom: 40px;
       text-align: center;
     }
-
     .contenedor-principal {
       width: 100%;
       max-width: 1800px;
     }
-
     .contenedor-tarjetas {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 20px;
     }
-
     .tarjeta {
       background: rgb(255, 255, 255);
       border-radius: 20px;
@@ -37,11 +33,7 @@
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
       transition: transform 0.2s ease;
     }
-
-    .tarjeta:hover {
-      transform: scale(1.015);
-    }
-
+    .tarjeta:hover { transform: scale(1.015); }
     .cabecera {
       background-color: rgb(255, 78, 0);
       border-radius: 12px;
@@ -49,38 +41,24 @@
       color: rgb(255, 255, 255);
       margin-bottom: 15px;
     }
-
-    .cabecera h2 {
-      margin: 0;
-      font-size: 1.3em;
-    }
-
+    .cabecera h2 { margin: 0; font-size: 1.3em; }
     .imagen-producto {
       background: rgb(255, 255, 255);
       padding: 10px;
       border-radius: 10px;
       margin-bottom: 15px;
     }
-
     .imagen-producto img {
       max-width: 100%;
       max-height: 300px;
       object-fit: contain;
     }
-
-
     .stock {
       color: rgb(0, 0, 0);
       font-weight: 500;
       margin-bottom: 15px;
     }
-    
-
-    .stock h3 {
-      font-size: 1.1em;
-      margin-bottom: 8px;
-    }
-
+    .stock h3 { font-size: 1.1em; margin-bottom: 8px; }
     table {
       width: 100%;
       border-collapse: collapse;
@@ -88,156 +66,115 @@
       border-radius: 10px;
       overflow: hidden;
     }
-
     th, td {
       border: 1px solid rgb(220, 220, 220);
       padding: 8px;
       text-align: center;
     }
-
-    th {
-      background-color: rgb(240, 240, 240);
-    }
-
-    .enlace {
-      color: rgb(255, 78, 0);
-      font-weight: bold;
-      text-decoration: none;
-      display: inline-block;
+    th { background-color: rgb(240, 240, 240); }
+    .composicion {
       margin-top: 10px;
-    }
-
-    .enlace:hover {
-      text-decoration: underline;
+      color: rgb(51, 51, 51);
+      font-size: 0.95em;
     }
   </style>
 </head>
 <body>
+<div class="contenedor-principal">
+<h1>Inventario Armario Ropa</h1>
+<div class="contenedor-tarjetas">
 
-  <div class="contenedor-principal">
-    <h1>Inventario Armario Ropa</h1>
+<!-- Tarjeta 1 -->
+<div class="tarjeta">
+<div class="cabecera"><h2>Polos Manga Corta</h2></div>
+<div class="imagen-producto"><img src="Polo%20Mc.png" alt="Polo Manga Corta"></div>
+<div class="stock"><h3>Stock actual</h3><table><thead><tr><th>Talla</th><th>Unidades</th></tr></thead><tbody>
+<tr><td>5 XL</td><td>4</td></tr><tr><td>4 XL</td><td>1</td></tr><tr><td>3 XL</td><td>1</td></tr><tr><td>2 XL</td><td>2</td></tr><tr><td>XL</td><td>4</td></tr><tr><td>L</td><td>8</td></tr><tr><td>M</td><td>8</td></tr><tr><td>S</td><td>0</td></tr>
+</tbody></table></div>
+<div class="composicion"><strong>Composición:</strong> 65% Poliéster, 35% Algodón.</div>
+</div>
 
-    <div class="contenedor-tarjetas">
+<!-- Tarjeta 2 -->
+<div class="tarjeta">
+<div class="cabecera"><h2>Polos Manga Larga</h2></div>
+<div class="imagen-producto"><img src="Polo%20ML.png" alt="Polo Manga Larga"></div>
+<div class="stock"><h3>Stock actual</h3><table><thead><tr><th>Talla</th><th>Unidades</th></tr></thead><tbody>
+<tr><td>5 XL</td><td>0</td></tr><tr><td>4 XL</td><td>1</td></tr><tr><td>3 XL</td><td>2</td></tr><tr><td>2 XL</td><td>2</td></tr><tr><td>XL</td><td>2</td></tr><tr><td>L</td><td>4</td></tr><tr><td>M</td><td>1</td></tr><tr><td>S</td><td>3</td></tr>
+</tbody></table></div>
+<div class="composicion"><strong>Composición:</strong> 60% Algodón, 40% Poliéster.</div>
+</div>
 
- <!-- Tarjeta 1 -->
-      <div class="tarjeta">
-        <div class="cabecera"><h2>Polos Manga Corta</h2></div>
-        <div class="imagen-producto"><img src="Polo%20Mc.png" alt="Polo Manga Corta"></div>
-        <div class="stock">
-          <h3>Stock actual</h3>
-          <table><thead><tr><th>Talla</th><th>Unidades</th></tr></thead><tbody>
-            <tr><td>5 XL</td><td>4</td></tr><tr><td>4 XL</td><td>1</td></tr><tr><td>3 XL</td><td>1</td></tr><tr><td>2 XL</td><td>2</td></tr><tr><td>XL</td><td>4</td></tr><tr><td>L</td><td>8</td></tr><tr><td>M</td><td>8</td></tr><tr><td>S</td><td>0</td></tr>
-          </tbody></table>
-          </div>
-        <a class="enlace" href="#" target="_blank">🔗 Ver Composición</a>
-      </div>
+<!-- Tarjeta 3 -->
+<div class="tarjeta">
+<div class="cabecera"><h2>Chaleco Normal</h2></div>
+<div class="imagen-producto"><img src="chaleco%20normal.png" alt="Chaleco Normal"></div>
+<div class="stock"><h3>Stock actual</h3><table><thead><tr><th>Talla</th><th>Unidades</th></tr></thead><tbody>
+<tr><td>5 XL</td><td>0</td></tr><tr><td>4 XL</td><td>1</td></tr><tr><td>3 XL</td><td>0</td></tr><tr><td>2 XL</td><td>0</td></tr><tr><td>XL</td><td>1</td></tr><tr><td>L</td><td>0</td></tr><tr><td>M</td><td>0</td></tr><tr><td>S</td><td>0</td></tr>
+</tbody></table></div>
+<div class="composicion"><strong>Composición:</strong> 100% Poliéster Acolchado.</div>
+</div>
 
+<!-- Tarjeta 4 -->
+<div class="tarjeta">
+<div class="cabecera"><h2>Chaleco Verano</h2></div>
+<div class="imagen-producto"><img src="chaleco%20verano.png" alt="Chaleco Verano"></div>
+<div class="stock"><h3>Stock actual</h3><table><thead><tr><th>Talla</th><th>Unidades</th></tr></thead><tbody>
+<tr><td>5 XL</td><td>0</td></tr><tr><td>4 XL</td><td>0</td></tr><tr><td>3 XL</td><td>0</td></tr><tr><td>2 XL</td><td>0</td></tr><tr><td>XL</td><td>0</td></tr><tr><td>L</td><td>0</td></tr><tr><td>M</td><td>0</td></tr><tr><td>S</td><td>0</td></tr>
+</tbody></table></div>
+<div class="composicion"><strong>Composición:</strong> 100% Algodón Multibolsillo.</div>
+</div>
 
-      <!-- Tarjeta 2 -->
-      <div class="tarjeta">
-        <div class="cabecera"><h2>Polos Manga Larga</h2></div>
-        <div class="imagen-producto"><img src="Polo%20ML.png" alt="Polo Manga Larga"></div>
-        <div class="stock">
-          <h3>Stock actual</h3>
-          <table><thead><tr><th>Talla</th><th>Unidades</th></tr></thead><tbody>
-            <tr><td>5 XL</td><td>0</td></tr><tr><td>4 XL</td><td>1</td></tr><tr><td>3 XL</td><td>2</td></tr><tr><td>2 XL</td><td>2</td></tr><tr><td>XL</td><td>2</td></tr><tr><td>L</td><td>4</td></tr><tr><td>M</td><td>1</td></tr><tr><td>S</td><td>3</td></tr>
-          </tbody></table>
-        </div>
-        <a class="enlace" href="#" target="_blank">🔗 Ver Composición</a>
-      </div>
+<!-- Tarjeta 5 -->
+<div class="tarjeta">
+<div class="cabecera"><h2>Forro Polar</h2></div>
+<div class="imagen-producto"><img src="forro%20polar.png" alt="Forro Polar"></div>
+<div class="stock"><h3>Stock actual</h3><table><thead><tr><th>Talla</th><th>Unidades</th></tr></thead><tbody>
+<tr><td>5 XL</td><td>200</td></tr><tr><td>4 XL</td><td>0</td></tr><tr><td>3 XL</td><td>0</td></tr><tr><td>2 XL</td><td>0</td></tr><tr><td>XL</td><td>0</td></tr><tr><td>L</td><td>0</td></tr><tr><td>M</td><td>0</td></tr><tr><td>S</td><td>0</td></tr>
+</tbody></table></div>
+<div class="composicion"><strong>Composición:</strong> 100% Poliéster.</div>
+</div>
 
-      <!-- Tarjeta 3 -->
-      <div class="tarjeta">
-        <div class="cabecera"><h2>Chaleco Normal</h2></div>
-        <div class="imagen-producto"><img src="chaleco%20normal.png" alt="Chaleco Normal"></div>
-        <div class="stock">
-          <h3>Stock actual</h3>
-          <table><thead><tr><th>Talla</th><th>Unidades</th></tr></thead><tbody>
-            <tr><td>5 XL</td><td>0</td></tr><tr><td>4 XL</td><td>1</td></tr><tr><td>3 XL</td><td>0</td></tr><tr><td>2 XL</td><td>0</td></tr><tr><td>XL</td><td>1</td></tr><tr><td>L</td><td>0</td></tr><tr><td>M</td><td>0</td></tr><tr><td>S</td><td>0</td></tr>
-          </tbody></table>
-        </div>
-        <a class="enlace" href="#" target="_blank">🔗 Ver Composición</a>
-      </div>
+<!-- Tarjeta 6 -->
+<div class="tarjeta">
+<div class="cabecera"><h2>Pantalones</h2></div>
+<div class="imagen-producto"><img src="pantalon.png" alt="Pantalón"></div>
+<div class="stock"><h3>Stock actual</h3><table><thead><tr><th>Talla</th><th>Unidades</th></tr></thead><tbody>
+<tr><td>62-64</td><td>0</td></tr><tr><td>58-60</td><td>0</td></tr><tr><td>54-56</td><td>0</td></tr><tr><td>50-52</td><td>0</td></tr><tr><td>46-48</td><td>0</td></tr><tr><td>42-44</td><td>0</td></tr><tr><td>38-40</td><td>0</td></tr><tr><td>34-36</td><td>0</td></tr>
+</tbody></table></div>
+<div class="composicion"><strong>Composición:</strong> 65% Poliéster, 35% Algodón.</div>
+</div>
 
-      <!-- Tarjeta 4 -->
-      <div class="tarjeta">
-        <div class="cabecera"><h2>Chaleco Verano</h2></div>
-        <div class="imagen-producto"><img src="chaleco%20verano.png" alt="Chaleco Verano"></div>
-        <div class="stock">
-          <h3>Stock actual</h3>
-          <table><thead><tr><th>Talla</th><th>Unidades</th></tr></thead><tbody>
-            <tr><td>5 XL</td><td>0</td></tr><tr><td>4 XL</td><td>0</td></tr><tr><td>3 XL</td><td>0</td></tr><tr><td>2 XL</td><td>0</td></tr><tr><td>XL</td><td>0</td></tr><tr><td>L</td><td>0</td></tr><tr><td>M</td><td>0</td></tr><tr><td>S</td><td>0</td></tr>
-          </tbody></table>
-        </div>
-        <a class="enlace" href="#" target="_blank">🔗 Ver Composición</a>
-      </div>
+<!-- Tarjeta 7 -->
+<div class="tarjeta">
+<div class="cabecera"><h2>Gorra naranja</h2></div>
+<div class="imagen-producto"><img src="gorra%20naranja.png" alt="Gorra Naranja"></div>
+<div class="stock"><h3>Stock actual</h3><table><thead><tr><th>Talla</th><th>Unidades</th></tr></thead><tbody>
+<tr><td>Única</td><td>200</td></tr>
+</tbody></table></div>
+<div class="composicion"><strong>Composición:</strong> 100% Algodón.</div>
+</div>
 
-      <!-- Tarjeta 5 -->
-      <div class="tarjeta">
-        <div class="cabecera"><h2>Forro Polar</h2></div>
-        <div class="imagen-producto"><img src="forro%20polar.png" alt="Forro Polar"></div>
-        <div class="stock">
-          <h3>Stock actual</h3>
-          <table><thead><tr><th>Talla</th><th>Unidades</th></tr></thead><tbody>
-            <tr><td>5 XL</td><td>200</td></tr><tr><td>4 XL</td><td>0</td></tr><tr><td>3 XL</td><td>0</td></tr><tr><td>2 XL</td><td>0</td></tr><tr><td>XL</td><td>0</td></tr><tr><td>L</td><td>0</td></tr><tr><td>M</td><td>0</td></tr><tr><td>S</td><td>0</td></tr>
-          </tbody></table>
-        </div>
-        <a class="enlace" href="#" target="_blank">🔗 Ver Composición</a>
-      </div>
+<!-- Tarjeta 8 -->
+<div class="tarjeta">
+<div class="cabecera"><h2>Parka</h2></div>
+<div class="imagen-producto"><img src="parka.png" alt="Parka"></div>
+<div class="stock"><h3>Stock actual</h3><table><thead><tr><th>Talla</th><th>Unidades</th></tr></thead><tbody>
+<tr><td>5 XL</td><td>200</td></tr><tr><td>4 XL</td><td>0</td></tr><tr><td>3 XL</td><td>0</td></tr><tr><td>2 XL</td><td>0</td></tr><tr><td>XL</td><td>0</td></tr><tr><td>L</td><td>0</td></tr><tr><td>M</td><td>0</td></tr><tr><td>S</td><td>0</td></tr>
+</tbody></table></div>
+<div class="composicion"><strong>Composición:</strong> 100% Poliéster Impermeable.</div>
+</div>
 
-      <!-- Tarjeta 6 -->
-      <div class="tarjeta">
-        <div class="cabecera"><h2>Pantalones</h2></div>
-        <div class="imagen-producto"><img src="pantalon.png" alt="Pantalón"></div>
-        <div class="stock">
-          <h3>Stock actual</h3>
-          <table><thead><tr><th>Talla</th><th>Unidades</th></tr></thead><tbody>
-            <tr><td>62-64</td><td>0</td></tr><tr><td>58-60</td><td>0</td></tr><tr><td>54-56</td><td>0</td></tr><tr><td>50-52</td><td>0</td></tr><tr><td>46-48</td><td>0</td></tr><tr><td>42-44</td><td>0</td></tr><tr><td>38-40</td><td>0</td></tr><tr><td>34-36</td><td>0</td></tr>
-          </tbody></table>
-        </div>
-        <a class="enlace" href="#" target="_blank">🔗 Ver Composición</a>
-      </div>
-      
-      <!-- Tarjeta 5 -->
-      <div class="tarjeta">
-        <div class="cabecera"><h2>Gorra naranja</h2></div>
-        <div class="imagen-producto"><img src="gorra%20naranja.png" alt="Gorra naranja"></div>
-        <div class="stock">
-          <h3>Stock actual</h3>
-          <table><thead><tr><th>Talla</th><th>Unidades</th></tr></thead><tbody>
-            <tr><td>5 XL</td><td>200</td></tr><tr><td>4 XL</td><td>0</td></tr><tr><td>3 XL</td><td>0</td></tr><tr><td>2 XL</td><td>0</td></tr><tr><td>XL</td><td>0</td></tr><tr><td>L</td><td>0</td></tr><tr><td>M</td><td>0</td></tr><tr><td>S</td><td>0</td></tr>
-          </tbody></table>
-        </div>
-        <a class="enlace" href="#" target="_blank">🔗 Ver Composición</a>
-      </div>
-            <!-- Tarjeta 5 -->
-      <div class="tarjeta">
-        <div class="cabecera"><h2>Parka</h2></div>
-        <div class="imagen-producto"><img src="parka.png" alt="Parka"></div>
-        <div class="stock">
-          <h3>Stock actual</h3>
-          <table><thead><tr><th>Talla</th><th>Unidades</th></tr></thead><tbody>
-            <tr><td>5 XL</td><td>200</td></tr><tr><td>4 XL</td><td>0</td></tr><tr><td>3 XL</td><td>0</td></tr><tr><td>2 XL</td><td>0</td></tr><tr><td>XL</td><td>0</td></tr><tr><td>L</td><td>0</td></tr><tr><td>M</td><td>0</td></tr><tr><td>S</td><td>0</td></tr>
-          </tbody></table>
-        </div>
-        <a class="enlace" href="#" target="_blank">🔗 Ver Composición</a>
-      </div>
-       <!-- Tarjeta 5 -->
-      <div class="tarjeta">
-        <div class="cabecera"><h2>Camiseta</h2></div>
-        <div class="imagen-producto"><img src="camiseta.png" alt="Camiseta"></div>
-        <div class="stock">
-          <h3>Stock actual</h3>
-          <table><thead><tr><th>Talla</th><th>Unidades</th></tr></thead><tbody>
-            <tr><td>5 XL</td><td>200</td></tr><tr><td>4 XL</td><td>0</td></tr><tr><td>3 XL</td><td>0</td></tr><tr><td>2 XL</td><td>0</td></tr><tr><td>XL</td><td>0</td></tr><tr><td>L</td><td>0</td></tr><tr><td>M</td><td>0</td></tr><tr><td>S</td><td>0</td></tr>
-          </tbody></table>
-        </div>
-        <a class="enlace" href="#" target="_blank">🔗 Ver Composición</a>
-      </div>
-      
-    </div>
-  </div>
+<!-- Tarjeta 9 -->
+<div class="tarjeta">
+<div class="cabecera"><h2>Camiseta</h2></div>
+<div class="imagen-producto"><img src="camiseta.png" alt="Camiseta"></div>
+<div class="stock"><h3>Stock actual</h3><table><thead><tr><th>Talla</th><th>Unidades</th></tr></thead><tbody>
+<tr><td>5 XL</td><td>200</td></tr><tr><td>4 XL</td><td>0</td></tr><tr><td>3 XL</td><td>0</td></tr><tr><td>2 XL</td><td>0</td></tr><tr><td>XL</td><td>0</td></tr><tr><td>L</td><td>0</td></tr><tr><td>M</td><td>0</td></tr><tr><td>S</td><td>0</td></tr>
+</tbody></table></div>
+<div class="composicion"><strong>Composición:</strong> 100% Algodón.</div>
+</div>
 
+</div>
+</div>
 </body>
 </html>
-
