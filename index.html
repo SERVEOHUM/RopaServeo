@@ -16,12 +16,13 @@
       margin-bottom: 40px;
     }
 
-    .contenedor-tarjetas {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
+   .contenedor-tarjetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
 
     .tarjeta {
       background: rgb(255, 255, 255);
